@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+### Name : ENBANATHAN V
+### Roll no : 212224220027
+### Date of experiment : 27-10-2026
 
 
 
@@ -78,24 +78,115 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
-
-
+```
+org 100h
+mov ax,[1100h]
+mov bx,[1102h]
+add ax,bx
+mov [1200h], ax
+mov [1202h], dx
+hlt
+```
 ## Output  
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c1a51afb-23f6-4e06-b120-b87f13f74e33" />
+
+
  
 ## Subtraction   of 8 bit numbers  ALP 
+```
+org 100h
+mov ax,[1100h]
+mov bx,[1102h]
+sub ax,bx
+mov [1200h],ax
+mov [1202h],dx
+hlt
+
+```
  
 ## Output  
-## Multiplication alp 
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/6ba8b65e-f62e-4208-8719-a22560abcfa1" />
+
+
+## Multiplication alp
+```
+org 100h
+mov ax,[1100h]
+mov bx,[1102h]
+mul bx
+mov [1200h],ax
+mov [1202h],dx
+hlt
+```
  ## Output  
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3db6d913-a6f5-44c7-94c6-c77779349f4e" />
 
 
 ## Division alp 
+```
+org 100h
+mov ax,[1100h]
+mov bx,[1102h]
+div bx
+mov [1200h],ax
+mov [1202h],dx
+hlt
 
+```
 ## Output  
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d15c8338-339d-4a01-9c5e-7173a2ffd3ad" />
 
+
+## Programs for logical  operations
+
+## OR ALP
+
+```
+org 100h
+mov ax,[1100h]
+mov bx,[1102h]
+or ax,bx
+ret
+```
+## OUTPUT
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a60156a3-fd21-4653-aa91-11873727592f" />
+
+## NOR ALP
+
+```
+org 100h
+mov ax,[1100h]
+mov bx,[1102h]
+or ax,bx
+not ax
+ret
+```
+## OUTPUT
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/8914edf6-232c-4dca-965b-6c8675e7c988" />
+
+## XNOR ALP
+```
+org 100h
+mov ax,[1100h]
+mov bx,[1102h]
+xor ax,bx
+ret
+```
+## OUTPUT
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/cd56694d-a0e1-4f7a-a628-0a21d039d423" />
+
+## NOT ALP
+```
+org 100h
+mov ax,[1100h]  
+not ax 
+ret
+```
+## OUTPUT
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fbba827a-2186-44d8-aa29-313b40301fd7" />
 
 ## Result :
+Thus execution of ALP on fundamental arithmetic and logical operations is sucessfully verified.
  
 
 
